@@ -19,7 +19,7 @@ $n = 0;
 
 for($i = 0; $i < count($array_numeros_desordenados); $i++){
    for($j = 0; $j < count($array_numeros_desordenados[$i]); $j++){
-      echo $array_numeros_desordenados[$i][$j] . "\t";
+      echo $array_numeros_desordenados[$n][$n] . "\t";
    }
    echo "<br>";
 }

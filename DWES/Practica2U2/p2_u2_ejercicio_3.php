@@ -6,7 +6,7 @@ una línea.
 
 */
 
-$num = 0;
+$num = 1;
 $pares_array = array();
 
 while(count($pares_array) < 10){
