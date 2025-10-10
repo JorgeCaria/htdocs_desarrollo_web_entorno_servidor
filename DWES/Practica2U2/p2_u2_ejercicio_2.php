@@ -41,7 +41,7 @@ for($i = 0; $i < count($alumnos); $i++){
         if($i == 0) $basico += $alumnos[$i][$j];
         if($i == 1) $medio += $alumnos[$i][$j];
         if($i == 2) $avanzado += $alumnos[$i][$j];
-        
+
         if($j == 0) $ingles += $alumnos[$i][$j];
         if($j == 1) $frances += $alumnos[$i][$j];
         if($j == 2) $aleman += $alumnos[$i][$j];
@@ -57,7 +57,7 @@ for($i = 0; $i < count($alumnos); $i++){
  echo "medio -> "   . $medio   ;
     echo "<br>";
 
- echo "avanzad -> " . $avanzado ;
+ echo "avanzado -> " . $avanzado ;
     echo "<br>";
 
  echo "ingles -> "  . $ingles  ;
