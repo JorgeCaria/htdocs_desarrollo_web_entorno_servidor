@@ -1,33 +1,60 @@
 <?php
 
 /*
-4. 
-Genera una matriz de 4*4 de forma aleatoria con números enteros desordenados 
-mostrar en un renglón los elementos almacenados en la diagonal principal y en el 
-siguiente los de la diagonal secundaria.
+5. 
+
+Generar de forma aleatoria una matriz de 3x5 con valores numéricos. 
+
+a. Imprimir todos los elementos en forma sucesiva tomándolos por fila. 
+b. Igual al anterior pero por columna.
 
 */
 
-$array_numeros_desordenados = array(
-                                       array(2, 4, 6, 8),
-                                       array(6, 8, 1, 9),
-                                       array(0, 1, 4, 7),
-                                       array(3, 5, 7, 9)
-);
+// $matriz = [];
 
-$n = 0;
-$y = count($array_numeros_desordenados) - 1;
 
-for($i = 0; $i < count($array_numeros_desordenados); $i++){
-   echo $array_numeros_desordenados[$n][$n] . "\t";
-   $n++;
+// for($i=0; $i<3; $i++){
+//    for($j=0; $j<5; $j++){
+//       $matriz[$i][$j] = rand(0, 9);
+//       echo $matriz[$i][$j] . "\t";
+//    }
+//    echo "<br>";
+// }
+
+
+// echo "<hr>";
+
+
+// for($i=0; $i<count($matriz); $i++){
+//    for($j=0; $j<count($matriz[$i]); $j++){
+//       echo $matriz[$i][$j] . "\t";
+//    }
+//    echo "<br>";
+// }
+
+
+/*
+Solución clase:
+*/
+
+$filas = count($matriz);
+$columnas = count($matriz[0]);
+
+//columnas
+for($i=0; $i<$columnas; $i++){
+   for($j=0; $j<$filas; $j++){
+      echo $matriz[$j][$i] . "\t";
+   }
+   echo "<br>";
 }
 
-echo "<br>";
-
-for($i = 0; $i < count($array_numeros_desordenados); $i++){
-   echo $array_numeros_desordenados[$y][$i] . "\t";
-   $y--;
+//filas
+for($i=0; $i<$filas; $i++){
+   for($j=0; $j<$columnas; $j++){
+      echo $matriz[$i][$j] . "\t";
+   }
+   echo "<br>";
 }
+
 
 ?>

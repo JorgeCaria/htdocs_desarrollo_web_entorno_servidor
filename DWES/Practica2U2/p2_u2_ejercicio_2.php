@@ -27,7 +27,7 @@ $alumnos = array(
 
 $basico   = 0;
 $medio    = 0;
-$avanzado = 0;
+$perfeccionamiento = 0;
 
 $ingles   = 0;
 $frances  = 0;
@@ -40,7 +40,7 @@ for($i = 0; $i < count($alumnos); $i++){
 
         if($i == 0) $basico += $alumnos[$i][$j];
         if($i == 1) $medio += $alumnos[$i][$j];
-        if($i == 2) $avanzado += $alumnos[$i][$j];
+        if($i == 2) $perfeccionamiento += $alumnos[$i][$j];
 
         if($j == 0) $ingles += $alumnos[$i][$j];
         if($j == 1) $frances += $alumnos[$i][$j];
@@ -57,7 +57,7 @@ for($i = 0; $i < count($alumnos); $i++){
  echo "medio -> "   . $medio   ;
     echo "<br>";
 
- echo "avanzado -> " . $avanzado ;
+ echo "perfeccionamiento -> " . $perfeccionamiento ;
     echo "<br>";
 
  echo "ingles -> "  . $ingles  ;
@@ -72,5 +72,10 @@ for($i = 0; $i < count($alumnos); $i++){
  echo "ruso -> "    . $ruso    ;
     echo "<br>";
 
+
+/*
+En clase lo hicieron con foreach
+
+*/
 
 ?>
