@@ -38,7 +38,15 @@ for($i = 0; $i < count($alumnos); $i++){
     for($j = 0; $j < count($alumnos[$i]); $j++){
         echo $alumnos[$i][$j] . "\t";
 
-        if($alumnos[$i] == 0) $basico += $alumnos[$i][$j];
+        if($i == 0) $basico += $alumnos[$i][$j];
+        if($i == 1) $medio += $alumnos[$i][$j];
+        if($i == 2) $avanzado += $alumnos[$i][$j];
+        
+        if($j == 0) $ingles += $alumnos[$i][$j];
+        if($j == 1) $frances += $alumnos[$i][$j];
+        if($j == 2) $aleman += $alumnos[$i][$j];
+        if($j == 3) $ruso += $alumnos[$i][$j];
+
     }
     echo "<br>";
 }
