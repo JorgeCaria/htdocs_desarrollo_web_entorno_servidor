@@ -35,6 +35,8 @@ b. Igual al anterior pero por columna.
 
 /*
 Solución clase:
+
+   Quiero repasar esta lógica 
 */
 
 $filas = count($matriz);
