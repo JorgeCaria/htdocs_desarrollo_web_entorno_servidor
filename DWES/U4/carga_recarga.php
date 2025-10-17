@@ -1,11 +1,11 @@
-<?php // chapuza_formtest.php
+<?php // carga_recarga.php
 
 if (isset($_POST['numero1']) && isset($_POST['numero2'])){
   echo "Resultado: " . $_POST['numero1'] + $_POST['numero2'];      
 }
 else{
  echo <<<_END
-<form method="post" action="chapuza_formtest.php">
+<form method="post" action="carga_recarga.php">
     <h1>Numeros a Sumar</h1>
 
     <div>

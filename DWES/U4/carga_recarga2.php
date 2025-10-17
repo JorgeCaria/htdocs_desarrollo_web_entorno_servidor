@@ -1,6 +1,6 @@
-<?php // chapuza_formtest2.php
+<?php // carga_recarga2.php
 echo <<<_END
-<form method="post" action="chapuza_formtest2.php">
+<form method="post" action="carga_recarga2.php">
     <h1>Numeros a Sumar</h1>
 
     <div>
